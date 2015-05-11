@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<script src="cordova.js"></script>
+
+<script src="index.js"></script>
+
+
+</head>
+
+<body>
+
+<div data-role="page">
+
+<button id="boton" class="ui-btn">Sacar Foto</button>
+
+<p id="texto"></p>
+
+<img id="myImage">
+
+
+
+</div>
+
+
+<script>
+
+
+document.addEventListener("deviceready", onDeviceReady, false);
+
+function onDeviceReady(){
+$("#boton").click(function(){
+    		sacaFoto();
+    	});
+}
+
+
+</script>
+
+
+
+</body>
+</html>
